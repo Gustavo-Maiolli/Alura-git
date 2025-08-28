@@ -7,7 +7,7 @@ paragrafo.innerHTML = "Escolha um número de 1-100";
 */
 
 let numSorteados = [];
-let randomizer = parseInt(Math.random() * 10 + 1);
+let randomizer = parseInt(Math.random() * 100 + 1);
 let numEscolhidos = "";
 let numSecreto = gerarNumero();
 let tentativas = 1;
@@ -57,7 +57,7 @@ function gerarNumero(){
     let quantidadeLista = numSorteados.length;
 
     //Limpa array
-    if (quantidadeLista == 10){
+    if (quantidadeLista == 100){
         numSorteados = [];
     }
 
